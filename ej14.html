@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 14</title>
+</head>
+<body>
+    <h1>Pokémon con paginación</h1>
+    <p>Muestra 3 Pokémon a la vez, con botones </p>
+    
+    <div style="margin: 20px;">
+        <button onclick="anterior()">◀ Anterior</button>
+        <span id="paginaInfo" style="margin: 0 20px;">Página 1 de 4</span>
+        <button onclick="siguiente()">Siguiente ▶</button>
+    </div>
+    
+    <div id="pokemonContainer" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;"></div>
+    
+    <div id="cargando">Cargando Pokémon...</div>
+    
+    <script src="ej14.js"></script>
+</body>
+</html>
